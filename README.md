@@ -1,55 +1,92 @@
-# Zomato-Data-Analysis-Classification
-***We want to predict if the restaurant will close or no depends on the features that on the data set***
+# Zomato Data Analysis and Classification
 
-We will add a new feature using Feature Engineering and call it Target
+![Zomato Logo](https://www.logolynx.com/images/logolynx/4d/4d91f73356a299e75a3cbac33aa23ca9.png)
 
-## Context:
-Restaurants from all over the world can be found here in Bengaluru. From the United States to
+## Overview
 
-Japan, Russia to Antarctica, you get all types of cuisines here. Delivery, Dine-out, Pubs, Bars, Drinks, 
-Buffet, Desserts, you name it and Bengaluru has it.
+This repository contains a Jupyter Notebook that analyzes and classifies restaurant data from Zomato, a popular online food delivery and restaurant discovery platform. The project explores various aspects of the data and uses machine learning classification techniques to predict restaurant success.
 
-Bengaluru is the best place for foodies. The number of restaurants is increasing day by day. 
+## Table of Contents
 
-Currently it stands at approximately 12,000 restaurants. With such a high number of restaurants. 
-This industry hasn't been saturated yet. And new restaurants are opening every day.
+- [Introduction](#introduction)
+- [Data](#data)
+- [Analysis](#analysis)
+- [Classification](#classification)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-However, it has become difficult for them to compete with already established restaurants.
-The key issues that continue to pose a challenge to them include high real estate costs, rising food costs, 
-shortage of quality manpower, fragmented supply chain and over-licensing. 
-This Zomato data aims at analyzing the demography of the location. 
-Most importantly it will help new restaurants in deciding their theme, menus, cuisine, cost etc. 
-for a particular location. 
-It also aims at finding similarity between neighborhoods of Bengaluru based on food. The dataset also contains reviews 
-for each of the restaurants which will help in finding overall rating for the place.
+## Introduction
 
-## Data Modeling
-Make machine learning Model using many techniques such as **Feature selection**
-also we will use many classification algorithms such as:
-- Logistic Regression
-- SVM
-- XGBoost classifier
-- Decision Tree Classification
-- Random Forest Classification
-- Naive Bayes Classifier
+The notebook provides an in-depth analysis of the Zomato dataset, offering insights into factors that influence restaurant ratings and success. It also includes a classification model to predict whether a restaurant will be successful based on various features.
 
-in **Model Evaluation** Section We will use:
-- accuarcy score
-- Classification Report
-- Precision, recall, F1-score
-- Confusion Matrix
-Finaly we will finish with **Model Deployment**
+## Data
 
-### Cross Validation & Classification Report & Precision, Recall, F1-score
+The dataset used in this project is available on Kaggle and includes information about restaurants, such as location, cuisine, ratings, and more. You can download the dataset [here](https://www.kaggle.com/shrutimehta/zomato-restaurants-data).
 
-#### Use cross-validation to validate our model on the train data
+## Analysis
 
-Cross-validation is a technique that splits the train data into k folds and uses k-1 folds for training and 1 fold for validation
+In the analysis section of the notebook, you will find:
 
-It repeats this process k times and averages the validation scores to get a more reliable estimate of the model's performance
+- Data exploration and visualization.
+- Correlation analysis to identify key factors affecting restaurant ratings.
+- Insights into popular cuisines, locations, and more.
 
-You can use cross_val_score function from scikit-learn to perform cross-validation and get the validation scores for each fold
+## Classification
 
-You can specify the number of folds using cv parameter and the scoring metric using scoring parameter
+The classification section of the notebook covers:
 
-In this case, we use 5 folds and accuracy as the scoring metric
+- Data preprocessing and feature engineering.
+- Building a machine learning classification model.
+- Evaluating model performance.
+
+## Installation
+
+To run the Jupyter Notebook and reproduce the analysis, you will need Python and the following libraries:
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+
+You can install these libraries using pip:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+## Usage
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/Abdoo50/Zomato-Data-Analysis-Classification.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd Zomato-Data-Analysis-Classification
+```
+
+3. Open and run the Jupyter Notebook:
+
+```bash
+jupyter notebook Zomato-Data-Analysis-Classification.ipynb
+```
+
+4. Follow the instructions in the notebook to explore the data and run the classification model.
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve this project or add new features, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to customize this README to include any additional information or details specific to your project. Make sure to update the links and installation instructions as needed.
